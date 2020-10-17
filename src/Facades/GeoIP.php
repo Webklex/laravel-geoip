@@ -12,6 +12,7 @@
 
 namespace Webklex\LaravelGeoIP\Facades;
 
+use Illuminate\Support\Facades\Facade;
 
 /**
  * Class GeoIP

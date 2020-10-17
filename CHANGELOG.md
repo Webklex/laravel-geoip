@@ -17,6 +17,10 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Breaking changes
 -NaN
 
+## 1.0.1 - 2020-10-18
+### Fixed
+- Dependencies fixed
+
 ## 1.0.0 - 2020-10-18
 ### Fixed
 - Potential server variable problem fixed
