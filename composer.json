@@ -1,0 +1,56 @@
+{
+    "name": "webklex/laravel-geoip",
+    "type": "library",
+    "description": "Laravel GeoIP client",
+    "keywords": [
+        "webklex",
+        "geoip",
+        "laravel",
+        "laravel-geoip",
+        "ip"
+    ],
+    "homepage": "https://github.com/webklex/laravel-geoip",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Malte Goldenbaum",
+            "email": "github@webklex.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "webklex/php-geoip": "^1.0",
+        "laravel/framework": ">=5.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webklex\\LaravelGeoIP\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Webklex\\LaravelGeoIP\\Providers\\GeoIPServiceProvider"
+            ],
+            "aliases": {
+                "Client": "Webklex\\LaravelGeoIP\\Facades\\GeoIP"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
